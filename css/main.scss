@@ -1,0 +1,44 @@
+//variables
+//fonts
+$font: 'Open Sans', Arial, sans-serif;
+
+//colors
+$text: #000000;
+$bg: #ffffff;
+$green: #026342;
+$blue: #075dac;
+$lightGreen: #6bccab;
+
+//another
+$font-size: 16px;
+
+//layout
+/*-----------------SECTION-MIXINS--------------------*/
+@import "layout/_mixins";
+/*------------------------SECTION-FONTS----------------*/
+@import "layout/_fonts";
+/*------------------------SECTION-SMART-GRID----------------*/
+@import "layout/_smart-grid";
+/*------------------------SECTION-ADJUSTMENT----------------*/
+@import "layout/_adjustment";
+/*-----------------SECTION-HOVER-ANIM--------------------*/
+@import "layout/_hover-anim";
+/*------------------------SECTION-COMMON----------------*/
+@import "layout/_common";
+
+//sections
+/*------------------------SECTION-HEADER----------------*/
+@import "sections/_header";
+/*-----------------SECTION-ABOUT--------------------*/
+@import "sections/about";
+/*-----------------SECTION-CATS--------------------*/
+@import "sections/cats";
+/*------------------------SECTION-FOOTER---------------------*/
+@import "sections/_footer";
+
+
+.debug {
+  //@include debug(rgba(0,0,0,0.3), 1px solid red);
+  //z-index: 100;
+  //top: 0;
+}

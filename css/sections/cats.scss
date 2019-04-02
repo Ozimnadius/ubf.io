@@ -1,0 +1,64 @@
+.cats{
+  background: url("/images/bg2.jpg") 0 0 no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+
+  &__item {
+    @include col;
+    @include size(8);
+  }
+}
+
+.cat{
+  height: 100%;
+  background-color: $bg;
+  padding: 40px 0;
+  padding-left: 40px;
+
+  &__top {
+    padding-bottom: 25px;
+    border-bottom: 4px solid $blue;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: $text;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__price {
+    font-size: 30px;
+    color: #04b478;
+    font-weight: 700;
+  }
+
+  &__list {
+    padding-right: 20px;
+  }
+
+  &__li {
+    position: relative;
+    color: $text;
+    font-size: 18px;
+    line-height: lh(18px,24px);
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background-color: $green;
+      left: -17px;
+      top: 10px;
+      border-radius: 50%;
+    }
+  }
+}
