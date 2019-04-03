@@ -9,13 +9,13 @@
     <meta name="keywords" content="Страница">
     <meta name="description" content="Страница">
 
-<!--    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">-->
-<!--    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">-->
-<!--    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">-->
-<!--    <link rel="manifest" href="images/favicon/site.webmanifest">-->
-<!--    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">-->
-<!--    <meta name="msapplication-TileColor" content="#da532c">-->
-<!--    <meta name="theme-color" content="#ffffff">-->
+    <!--    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">-->
+    <!--    <link rel="manifest" href="images/favicon/site.webmanifest">-->
+    <!--    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">-->
+    <!--    <meta name="msapplication-TileColor" content="#da532c">-->
+    <!--    <meta name="theme-color" content="#ffffff">-->
 
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -52,6 +52,34 @@
                     <img src="images/icons/email.png" alt="" class="email__icon">
                     <span class="email__title">info@cburus.ru</span>
                 </a>
+            </div>
+
+            <button type="button" class="header__menu">
+                <img src="images/icons/menu.png" alt="" class="header__menu-img">
+            </button>
+
+            <div class="menu">
+                <button class="menu__close">
+                    <img src="images/icons/close.png" alt="" class="menu__close-button">
+                </button>
+                <div class="menu__item">
+                    <a href="tel:8(985)600-29-53" class="tel">
+                        <img src="images/icons/tel.png" alt="" class="tel__icon">
+                        <span class="tel__title">8 (985) 600-29-53</span>
+                    </a>
+                </div>
+                <div class="menu__item">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=79856002953" class="tel">
+                        <img src="images/icons/wapp.png" alt="" class="tel__icon">
+                        <span class="tel__title">8 (985) 600-29-53</span>
+                    </a>
+                </div>
+                <div class="menu__item">
+                    <a href="mailto:info@cburus.ru" class="email">
+                        <img src="images/icons/email.png" alt="" class="email__icon">
+                        <span class="email__title">info@cburus.ru</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -98,46 +126,53 @@
 
                     </div>
 
-                    <div class="about__left">
-                        <div class="about__blocks">
-                            <div class="about__block">
-                                <div class="about__block-title">
-                                    АКЦИЯ:
+                </div>
+            </div>
+            <div class="about__bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="about__left">
+                            <div class="about__blocks">
+                                <div class="about__block">
+                                    <div class="about__block-title">
+                                        АКЦИЯ:
+                                    </div>
+                                    <div class="about__block-desc">
+                                        При покупке юридического адреса
+                                    </div>
                                 </div>
-                                <div class="about__block-desc">
-                                    При покупке юридического адреса
+                                <div class="about__block">
+                                    <div class="about__block-title">
+                                        БЕСПЛАТНАЯ РЕГИСТРАЦИЯ
+                                    </div>
+                                    <div class="about__block-desc">
+                                        ЮРИДИЧЕСКОГО ЛИЦА
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="about__block">
-                                <div class="about__block-title">
-                                    БЕСПЛАТНАЯ РЕГИСТРАЦИЯ
+                                <div class="about__block">
+                                    <div class="about__block-title">
+                                        БЕЗ ПОХОДА К НОТАРИУСУ!
+                                    </div>
                                 </div>
-                                <div class="about__block-desc">
-                                    ЮРИДИЧЕСКОГО ЛИЦА
-                                </div>
-                            </div>
-                            <div class="about__block">
-                                <div class="about__block-title">
-                                    БЕЗ ПОХОДА К НОТАРИУСУ!
-                                </div>
+
                             </div>
 
+                        </div>
+
+                        <div class="about__right">
+                            <div class="about__desc">
+                                Юридические
+                                адреса в любой
+                                налоговой
+                            </div>
+                            <div class="about__price">
+                                26 000 <br>
+                                РУБ.
+                            </div>
                         </div>
 
                     </div>
-
-                    <div class="about__right">
-                        <div class="about__desc">
-                            Юридические
-                            адреса в любой
-                            налоговой
-                        </div>
-                        <div class="about__price">
-                            26 000 <br>
-                            РУБ.
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -182,7 +217,7 @@
                         <div class="cat">
                             <div class="cat__top">
                                 <div class="cat__title">
-                                    Пакет  «Basic»
+                                    Пакет «Basic»
                                 </div>
                                 <div class="cat__price">
                                     19 000 р.
@@ -223,7 +258,7 @@
                         <div class="cat">
                             <div class="cat__top">
                                 <div class="cat__title">
-                                    Пакет  «Premium»
+                                    Пакет «Premium»
                                 </div>
                                 <div class="cat__price">
                                     45 000 р.
@@ -272,16 +307,41 @@
 
     <!-- footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__desc">
-                Оставьте заявку, <br>
-                и мы свяжемся с Вами в ближайшее время ;)
-            </div>
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__desc">
+                    Оставьте заявку, <br>
+                    и мы свяжемся с Вами в ближайшее время ;)
+                </div>
 
-            <div class="footer__call">
-                <button type="button" class="call">
-                    Заказать звонок
-                </button>
+                <div class="footer__call">
+                    <button type="button" class="call">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__item">
+                    <a href="tel:8(985)600-29-53" class="tel">
+                        <img src="images/icons/tel.png" alt="" class="tel__icon">
+                        <span class="tel__title">8 (985) 600-29-53</span>
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=79856002953" class="tel">
+                        <img src="images/icons/wapp.png" alt="" class="tel__icon">
+                        <span class="tel__title">8 (985) 600-29-53</span>
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <a href="mailto:info@cburus.ru" class="email">
+                        <img src="images/icons/email.png" alt="" class="email__icon">
+                        <span class="email__title">info@cburus.ru</span>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

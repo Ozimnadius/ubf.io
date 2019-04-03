@@ -23,6 +23,10 @@ $fields_lg: 15px;
 $fields_md: 15px;
 $fields_sm: 15px;
 $fields_xs: 15px;
+$containerWidth_lg: 975px;
+$containerWidth_md: 320px;
+$containerWidth_sm: 320px;
+$containerWidth_xs: 320px;
 
 @mixin wrapper-full(){
     padding-left: $fields;
@@ -31,21 +35,25 @@ $fields_xs: 15px;
     @include lg-block(){
         padding-left: $fields_lg;
         padding-right: $fields_lg;
+        max-width: $containerWidth_lg;
     }
 
     @include md-block(){
         padding-left: $fields_md;
         padding-right: $fields_md;
+        max-width: $containerWidth_md;
     }
 
     @include sm-block(){
         padding-left: $fields_sm;
         padding-right: $fields_sm;
+        max-width: $containerWidth_sm;
     }
 
     @include xs-block(){
         padding-left: $fields_xs;
         padding-right: $fields_xs;
+        max-width: $containerWidth_xs;
     }
 }
 
@@ -349,24 +357,6 @@ $fields_xs: 15px;
     @media screen and (min-width: $min_width) and (max-width: $max_width){
         @content;
     }
-}
-
-@mixin u-row-flex($offset){
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: ($offset / -2);
-    margin-right: ($offset / -2);
-}
-
-@mixin u-col($offset){
-    box-sizing: border-box;
-    word-wrap: break-word;
-    margin-left: ($offset / 2);
-    margin-right: ($offset / 2);
-}
-
-@mixin u-size($n, $columns, $offset){
-    width: #{calc(100% / #{$columns} * #{$n} - #{$offset})};
 }
 
 @mixin reset(){

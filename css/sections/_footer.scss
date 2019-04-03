@@ -1,14 +1,48 @@
 .footer {
   padding: 60px 0;
+  @include md-block{
+    padding: 0;
+  };
 
-  .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+
+  &__top {
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include md-block{
+        justify-content: center;
+      };
+    }
+    @include md-block{
+      padding-bottom: 50px;
+    };
+  }
+
+  &__bottom {
+    display: none;
+    background: $text;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    @include md-block{
+      display: block;
+    };
+  }
+
+  &__item {
+    margin-bottom: 19px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__desc {
     font-size: 20px;
+    @include md-block{
+      display: none;
+    };
   }
 }
 

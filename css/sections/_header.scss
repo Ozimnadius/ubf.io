@@ -6,6 +6,24 @@
     justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
+    position: relative;
+    @include md-block{
+      padding-top: 25px;
+      padding-bottom: 25px;
+    };
+  }
+
+  &__menu {
+    display: none;
+    @include md-block{
+      display: block;
+    };
+  }
+
+  &__tel,&__email {
+    @include md-block{
+      display: none;
+    };
   }
 }
 
@@ -21,12 +39,47 @@
   display: flex;
   align-items: center;
 
+  @include md-block{
+    flex-direction: column;
+  };
+
   &__icon {
     margin-right: 15px;
+    @include md-block{
+      margin-bottom: 15px;
+      margin-right: 0;
+    };
   }
 
   &__title {
     color: $bg;
     font-size: 14px;
+  }
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 213px;
+  height: 711px;
+  background-color: #142a42;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+
+  &__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &.active {
+    display: flex;
   }
 }

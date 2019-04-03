@@ -19,17 +19,17 @@ smartgrid('./css/layout', {
         md: {
             width: "991.99px",
             fields: "15px",
-            containerWidth: "750px"
+            containerWidth: "320px"
         },
         sm: {
             width: "767.99px",
             fields: "15px",
-            containerWidth: "570px"
+            containerWidth: "320px"
         },
         xs: {
             width: "575.99px",
             fields: "15px",
-            containerWidth: "100%"
+            containerWidth: "320px"
         }
     },
 });
