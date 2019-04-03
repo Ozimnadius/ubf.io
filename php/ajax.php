@@ -75,7 +75,7 @@ function mailTo($addrs, $subject, $html, $file = [])
     $mail->CharSet = $mail::CHARSET_UTF8;
     try {
         //Recipients
-        $mail->setFrom('info@web-comp.ru', 'Web-Comp');
+        $mail->setFrom('info@cburus.ru', 'Web-Comp');
         foreach ($addrs as $addr) {
             $mail->addAddress($addr, 'Joe User');
         }
