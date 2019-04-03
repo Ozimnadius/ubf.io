@@ -379,6 +379,62 @@
     </div>
 </div>
 
+<div class="popup">
+    <div class="popup__wrapper">
+        <form action="ajax.php" method="post" class="form">
+
+            <button type="button" class="form__close">
+                <img src="images/icons/close.png" alt="" class="form__close-img">
+            </button>
+
+            <div class="form__wrap">
+                <div class="form__title">
+                    Заполните форму и мы с удовольствием ответим на все Ваши вопросы
+                </div>
+
+                <div class="form__fields">
+                    <div class="form__field">
+                        <div class="form__field-name">
+                            ФИО
+                        </div>
+                        <input type="text" name="name" placeholder="Иванов Иван Иванович" class="form__field-input input">
+                    </div>
+                    <div class="form__field">
+                        <div class="form__field-name">
+                            Телефон
+                        </div>
+                        <input type="tel" name="tel" placeholder="8 888 888 88 88" class="form__field-input input">
+                    </div>
+                    <div class="form__field">
+                        <div class="form__field-name">
+                            E-mail
+                        </div>
+                        <input type="email" name="email" placeholder="ivanov@ivanov.ru" class="form__field-input input">
+                    </div>
+                </div>
+
+                <div class="form__button">
+                    <div class="form__fill">
+                        Пожалуйста, заполните все поля <br>
+                        с информацией
+                    </div>
+                    <button type="submit" class="form__submit">
+                        Отправить
+                    </button>
+                </div>
+
+                <div class="form__fz">
+                    Нажимая кнопку «Отправить», Вы даете согласие на обработку своих <br>
+                    <span class="form__fz_td">персональных данных</span>
+                </div>
+
+                <input type="hidden" name="action" value="call">
+            </div>
+
+        </form>
+    </div>
+</div>
+
 <script src="js/vendor.min.js"></script>
 <script src="js/main.js"></script>
 </body>

@@ -29,6 +29,8 @@ const moduleJS = [
 const vendorJs = [
     'node_modules/jquery/dist/jquery.js',
     'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
+    'node_modules/jquery-validation/dist/jquery.validate.js',
+    'node_modules/jquery-validation/dist/additional-methods.js',
 ];
 
 
